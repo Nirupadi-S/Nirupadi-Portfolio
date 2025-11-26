@@ -18,13 +18,13 @@ This project showcases my skills, projects, education, and professional journey 
 
 ## 📌 Projects
 - AI-Based Resume Builder (Android App)
-- -Android app for generating resumes with live preview, profile image support, and PDF export.
+- Android app for generating resumes with live preview, profile image support, and PDF export.
 
 - Smart Agriculture System (IoT)
-- -Greenhouse monitoring & automation using NodeMCU, sensors, Firebase & Blynk.
+- Greenhouse monitoring & automation using NodeMCU, sensors, Firebase & Blynk.
 
--Gym Management System
-- -Python-SQL based system to manage memberships, attendance, payments, and reports.
+- Gym Management System
+- Python-SQL based system to manage memberships, attendance, payments, and reports.
 
 ## 🎓 Education
 
