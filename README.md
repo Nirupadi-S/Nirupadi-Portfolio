@@ -3,6 +3,8 @@
 Welcome to my personal portfolio website!
 This project showcases my skills, projects, education, and professional journey as a Computer Science Engineering student and aspiring Software Engineer.
 
+## You Can Directly Watch The Link ["https://nirupadi-s.github.io/Nirupadi-Portfolio/" ] 
+
 ## 🚀 About Me
 
 - I am a CSE student skilled in Java, Android Development, Python, and DSA.
