@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="en">
+<head>
+<!-- README CONTENT
+# 🌐 Nirupadi S B — Portfolio
+Welcome to my personal portfolio website! This project showcases my skills, projects, education, and professional journey as a Computer Science Engineering student and aspiring Software Engineer.
+## About Me
+I am a CSE student skilled in Java, Android Development, Python, and DSA.
+## Tech Stack
+Java, Python, JavaScript, HTML, CSS, Android, MySQL, Firebase, DSA.
+## Projects
+- AI-Based Resume Builder (Android App)
+- Smart Agriculture System (IoT)
+- Gym Management System
+## Contact
+Email: nirupadi9274@gmail.com | LinkedIn: linkedin.com/in/nirupadi-s | GitHub: github.com/Nirupadi-S
+END README CONTENT -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nirupadi S B — Portfolio</title>
+  <meta name="description" content="Portfolio of Nirupadi S B — CSE student & aspiring Software Engineer. Java | Android | ML | Projects, Experience & Contact." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0f1724; /* dark navy */
+      --card:#0b1220;
+      --muted:#9aa4b2;
+      --accent:#06b6d4;
+      --glass: rgba(255,255,255,0.03);
+      --radius:14px;
+      color-scheme: dark;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;font-family:Inter,system-ui,Arial,sans-serif;background:linear-gradient(180deg,#071024 0%, #081427 60%);color:#e6eef6}
+    a{color:var(--accent);text-decoration:none}
+
+    .container{max-width:1000px;margin:40px auto;padding:28px}
+    header{display:flex;gap:20px;align-items:center}
+    .avatar{width:110px;height:110px;border-radius:18px;background:linear-gradient(135deg,#0e1722,#13202b);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:34px;color:var(--accent);box-shadow:0 10px 30px rgba(2,6,23,0.6)}
+    .intro{flex:1}
+    h1{margin:0;font-size:28px}
+    .subtitle{margin:6px 0;color:var(--muted)}
+
+    .top-actions{display:flex;gap:10px;margin-top:12px}
+    .btn{background:var(--accent);color:#032028;padding:10px 14px;border-radius:10px;border:none;cursor:pointer;font-weight:600}
+    .ghost{background:transparent;border:1px solid rgba(255,255,255,0.06);padding:10px 14px;border-radius:10px}
+
+    .grid{display:grid;grid-template-columns:1fr 340px;gap:20px;margin-top:28px}
+    .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:18px;border-radius:var(--radius);box-shadow:0 6px 20px rgba(2,6,23,0.6)}
+
+    /* left column */
+    .about p{color:var(--muted);line-height:1.6}
+    .skills{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+    .skill{background:var(--glass);padding:8px 10px;border-radius:999px;font-size:13px;color:var(--muted);border:1px solid rgba(255,255,255,0.03)}
+
+    .projects .project{margin-top:12px;padding:12px;border-radius:10px;background:linear-gradient(180deg,rgba(255,255,255,0.01),transparent);border-left:4px solid rgba(6,182,212,0.15)}
+    .project h3{margin:0 0 6px 0}
+    .meta{font-size:13px;color:var(--muted)}
+
+    /* right column */
+    .side h3{margin-top:0}
+    .contact-item{display:flex;align-items:center;gap:10px;padding:10px;border-radius:10px;background:rgba(255,255,255,0.02);margin-top:10px}
+    .contact-item strong{display:block}
+
+    footer{text-align:center;color:var(--muted);margin-top:30px;font-size:13px}
+
+    /* responsive */
+    @media (max-width:880px){
+      .grid{grid-template-columns:1fr}
+      .avatar{width:92px;height:92px;font-size:28px}
+    }
+
+    /* subtle animations */
+    .fade-up{opacity:0;transform:translateY(10px);animation:fadeUp .7s ease forwards}
+    .delay-1{animation-delay:.05s}
+    .delay-2{animation-delay:.12s}
+    .delay-3{animation-delay:.2s}
+    @keyframes fadeUp{to{opacity:1;transform:none}}
+
+    /* theme toggle */
+    .theme-toggle{margin-left:auto;background:transparent;border:1px solid rgba(255,255,255,0.06);padding:8px;border-radius:10px;cursor:pointer}
+
+    /* code snippet */
+    pre{background:#041024;padding:12px;border-radius:8px;font-size:13px;overflow:auto;color:#cfeef5}
+  .profile-pic {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid rgba(255,255,255,0.3);
+  box-shadow: 0 4px 18px rgba(0,0,0,0.45);
+}
+</style>
+</head>
+<body>
+  <div class="container">
+    <header class="fade-up delay-1">
+      <div class="avatar"><img src="ME.jpg" alt="Nirupadi" class="profile-pic"></div>
+      <div class="intro">
+        <h1>Nirupadi S B</h1>
+        <div class="subtitle">CSE Student — Aspiring Software Engineer (Java • Android • ML) • Batch of 2026</div>
+        <div class="top-actions">
+          <a class="btn" href="#projects">View Projects</a>
+          <a class="ghost" href="#contact">Contact Me</a>
+          <button id="downloadResume" class="ghost">Download Resume</button>
+        </div>
+      </div>
+      <button class="theme-toggle" id="themeToggle" title="Toggle light/dark">🌗</button>
+    </header>
+
+    <main class="grid">
+      <section class="card about fade-up delay-2">
+        <h2>About Me</h2>
+        <p>
+          I am a Computer Science & Engineering student at New Horizon College of Engineering (Batch 2026), passionate about building practical software and Android applications using Java.
+          I enjoy learning new technologies, solving algorithmic problems, and delivering clean, maintainable code. Currently exploring machine learning and mobile-first UX.
+        </p>
+
+        <h3 style="margin-top:18px">Skills</h3>
+        <div class="skills">
+          <div class="skill">Java</div>
+          <div class="skill">Android (Java, XML)</div>
+          <div class="skill">Data Structures & Algorithms</div>
+          <div class="skill">Python</div>
+          <div class="skill">SQL</div>
+          <div class="skill">Git & GitHub</div>
+          <div class="skill">Problem Solving</div>
+          <div class="skill">Machine Learning (basics)</div>
+        </div>
+
+        <h3 style="margin-top:18px">Selected Projects</h3>
+        <div id="projects" class="projects">
+          <div class="project">
+            <h3>AI-Based Resume Builder (Android App)</h3>
+            <p class="meta">A beginner-level Android app that helps users create professional resumes and export them as PDF. Focused on a clean UI and PDF generation.</p>
+            <p class="meta"><strong>Tech:</strong> Java, XML, Android Studio</p>
+          </div>
+
+          <div class="project">
+            <h3>Gym Management System</h3>
+            <p class="meta">A desktop/web-based system to manage gym members, attendance, plans, and fee tracking. Includes reporting and simple analytics.</p>
+            <p class="meta"><strong>Tech:</strong> Python, SQL</p>
+          </div>
+
+          <div class="project">
+            <h3>Placement Practice — DSA Pack</h3>
+            <p class="meta">Curated problem set and daily plan for placement preparation: arrays, strings, linked lists and mock tests. Includes solutions in Java.</p>
+            <p class="meta"><strong>Tech:</strong> Java, Algorithms</p>
+          </div>
+        </div>
+
+        <h3 style="margin-top:18px">Experience / Internships</h3>
+        <p class="meta">Software Development Intern at Cognifyz Technologies — Selected on 25/11/2025.</p>
+
+        
+      </section>
+
+      <aside class="card side fade-up delay-3">
+        <h3>Contact</h3>
+        <div class="contact-item">
+          <div>
+            <div style="font-size:13px;color:var(--muted)">Email</div>
+            <strong id="email">nirupadi9274@gmail.com</strong>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div>
+            <div style="font-size:13px;color:var(--muted)">LinkedIn</div>
+            <strong><a id="linkedin" href="#">https://linkedin.com/in/nirupadi-s</a></strong>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div>
+            <div style="font-size:13px;color:var(--muted)">GitHub</div>
+            <strong><a id="github" href="#">https://github.com/Nirupadi-S</a></strong>
+          </div>
+        </div>
+
+        <h3 style="margin-top:18px">Education</h3>
+        <p class="meta"><strong>New Horizon College of Engineering</strong><br>B.E. — Computer Science & Engineering (Graduating 2026)</p>
+
+        <h3 style="margin-top:18px">Certifications & Achievements</h3>
+        <ul class="meta" style="padding-left:18px;color:var(--muted)">
+          <li>Competitive programming & DSA practice (self-study)</li>
+          <li>Completed Android app with PDF export</li>
+        </ul>
+
+        <h3 style="margin-top:18px">Quick Contact</h3>
+        <form id="contactForm" onsubmit="return false">
+          <label style="font-size:13px;color:var(--muted)">Message</label>
+          <textarea id="msg" rows="4" style="width:100%;resize:none;margin-top:6px;padding:8px;border-radius:8px;background:transparent;border:1px solid rgba(255,255,255,0.04);color:inherit"></textarea>
+          <button id="sendBtn" class="btn" style="width:100%;margin-top:10px">Send Message</button>
+        </form>
+
+      </aside>
+
+    </main>
+
+    <footer>
+      © 2025 Nirupadi S B • Software Engineer Portfolio • All Rights Reserved<strong> Nirupadi S B</strong>    </footer>
+  </div>
+
+  <script>
+    // Theme toggle (simple light/dark)
+    const themeToggle = document.getElementById('themeToggle');
+    themeToggle.addEventListener('click', ()=>{
+      if(document.documentElement.style.getPropertyValue('--bg') === ''){
+        document.documentElement.style.setProperty('--bg','white');
+        document.body.style.background = 'linear-gradient(180deg,#f7fafc,#eef2ff)';
+        document.body.style.color = '#0b1220';
+        document.querySelectorAll('.card').forEach(c=>c.style.boxShadow='0 6px 20px rgba(2,6,23,0.06)');
+      } else {
+        document.documentElement.style.setProperty('--bg','');
+        document.body.style.background = 'linear-gradient(180deg,#071024 0%, #081427 60%)';
+        document.body.style.color = '#e6eef6';
+      }
+    });
+
+    // Dummy contact send — opens mail client
+    document.getElementById('sendBtn').addEventListener('click', ()=>{
+      const msg = document.getElementById('msg').value.trim();
+      const email = document.getElementById('email').textContent || 'nirupadi@example.com';
+      if(!msg){
+        alert('Please type a short message before sending.');
+        return;
+      }
+      const subject = encodeURIComponent('Portfolio message from website');
+      const body = encodeURIComponent(msg + '\n\n-- Sent from portfolio');
+      window.location.href = `mailto:${email}?subject=${subject}&body=${body}`;
+    });
+
+    // Download resume (placeholder) — generates a simple text resume file
+    document.getElementById('downloadResume').addEventListener('click', ()=>{
+      const resumeText = `Nirupadi S B\nCSE Student | Batch of 2026\nEmail: nirupadi@example.com\nLinkedIn: linkedin.com/in/yourprofile\nGitHub: github.com/yourusername\n\nSummary:\nPassionate CSE student with hands-on experience in Java, Android and projects in resume generation and gym management. Skilled in DSA and problem solving.\n`;
+      const blob = new Blob([resumeText], {type: 'text/plain'});
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url; a.download = 'Nirupadi_S_B_Resume.txt';
+      document.body.appendChild(a); a.click(); a.remove(); URL.revokeObjectURL(url);
+    });
+
+    // small entrance animation trigger
+    document.querySelectorAll('.fade-up').forEach((el, i)=>{ el.style.animationDelay = (i*0.06)+'s'; });
+  </script>
+</body>
+</html>
